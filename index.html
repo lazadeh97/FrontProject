@@ -41,17 +41,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
     <link rel="stylesheet" href="assets/styles/style.css">
 
 </head>
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-light p-0 position-relative z-index:123">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light p-0 position-relative z-index:123 w-100">
+            <div class="container navbar_container">
                 <div class="navbar_wrapper light">
                     <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" data-bs-target="#menubarNav" aria-controls="navbarNav"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -78,7 +79,7 @@
                                 <a class="navbar-ctype" id="btnBusiness" href="/az/corporate/index">Biznes </a>
                             </div>
                             <div class="navbar__theme">
-                                <a href=""><i class="fa-regular fa-moon"></i></a>
+                                <button  id="btnLight"><i class="fa-regular fa-moon"></i></button>
                             </div>
                             <div class="navbar__langs menubar__langs">
                                 <a href="/en/private-clients" class="menubar__langs--item ">ENG </a>
@@ -86,7 +87,7 @@
                                 <!-- <div class="menubar__langs-w"></div> -->
                             </div>
                             <div class="menubar__search navbar__search">
-                                <a href="javascript:void(0)" style="pointer-events: none">
+                                <a href=""  style="pointer-events: none">
                                     <i class="fa-solid fa-magnifying-glass fa-flip-horizontal menubar__search__link"
                                         style="font-size: 0.73em;"></i>
                                 </a>
@@ -96,7 +97,7 @@
                 </div>
         </nav>
         <div class="container">
-            <div class="menubar hidden--mobile menubarNav">
+            <div class="menubar">
                 <div class="container">
                     <div class="menubar__wrapper ">
                         <div class="menubar__menus">
@@ -162,7 +163,7 @@
                                     <p class="frontbanner__desc">Artıq market alış-verişi üçün min. 10 AZN-lik ödənişə
                                         ehtiyac yoxdur! Sadəcə Apple Pay / Google Pay ilə ödə və 5% keşbek qazan!</p>
                                     <a href="https://unibank.az/cards/goto?language=az&name=cashback"
-                                        class="btn btn-primary description">Ətraflı</a>
+                                        class="btn btn-primary description-btn">Ətraflı</a>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +186,7 @@
                                     <p class="frontbanner__desc">Sentyabrın 2-dək UCard kredit xəttinlə ürəyin istəyəni
                                         Trendyolda al və 6 ayadək faizsiz hissə-hissə ödə!</p>
                                     <a href="https://unibank.az/az/menus/294/sms_taksit"
-                                        class="btn btn-primary description">Ətraflı</a>
+                                        class="btn btn-primary description-btn">Ətraflı</a>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +208,7 @@
                                     <p class="frontbanner__desc">Bunun üçün sadəcə UBank mobil tətbiqində UCard-nı seç
                                         və saniyələr ərzində pul kartına otursun!</p>
                                     <a href="https://unibank.az/az/cards/view/1998"
-                                        class="btn btn-primary description">Ətraflı</a>
+                                        class="btn btn-primary description-btn">Ətraflı</a>
                                 </div>
                             </div>
                         </div>
@@ -247,134 +248,112 @@
         </div>
     </div>
 
-    <div class="container mt-4">
-        <div class="row">
+    <div class="container cards mt-4">
+        <div class="row cards_row  m-0 justify-between">
             <!-- Card 1 - Nağd kreditlər -->
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card cards-style">
                     <div class="card-body">
                         <h5 class="card-title">Nağd kreditlər</h5>
-                        <p class="card-text">16% -dən başlayaraq</p>
+                        <p class="card-text-percent">16%</p>
+                        <p class="card-text-description pb-2">-dən başlayaraq</p>
                         <a href="https://onlineservices.unibank.az/OnlineLoanOffer/LoanOffer.jsp?woo_campaign=loanorder&amp;woo_source=unibank.az&amp;woo_medium=block"
-                            class="btn btn-primary" target="_blank">Sifariş et</a>
+                            class="btn btn-primary btn-cards" target="_blank">Sifariş et</a>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2 - Əmanətlər -->
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card cards-style">
                     <div class="card-body">
                         <h5 class="card-title">Əmanətlər</h5>
-                        <p class="card-text">11% -dək illik gəlir</p>
-                        <a href="/az/deposits/index" class="btn btn-primary">Ətraflı</a>
+                        <p class="card-text-percent">11%</p>
+                        <p class="card-text-description pb-2">-dək illik gəlir</p>
+                        <a href="/az/deposits/index" class="btn btn-primary btn-cards">Ətraflı</a>
                     </div>
                 </div>
             </div>
             <!-- Card 3 - Plastik kartlar -->
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card cards-style">
                     <div class="card-body">
                         <h5 class="card-title">Plastik kartlar</h5>
-                        <p class="card-text">30% -dək keşbek xidməti</p>
-                        <a href="/az/cards" class="btn btn-primary">Ətraflı</a>
+                        <p class="card-text-percent">30%</p>
+                        <p class="card-text-description pb-2">-dək keşbek xidməti</p>
+                        <a href="/az/cards" class="btn btn-primary btn-cards">Ətraflı</a>
                     </div>
                 </div>
             </div>
 
             <!-- Card 4 - Kredit kartı -->
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card cards-style">
                     <div class="card-body">
                         <h5 class="card-title">Kredit kartı</h5>
-                        <p class="card-text">40 günədək güzəşt müddəti</p>
-                        <a href="/az/cards" class="btn btn-primary">Ətraflı</a>
+                        <p class="card-text-percent">40</p>
+                        <p class="card-text-description pb-2">günədək güzəşt müddəti</p>
+                        <a href="/az/cards" class="btn btn-primary btn-cards">Ətraflı</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="appbar appbar--ucardbar">
+    <div class="uCardbar--ucardbar mt-lg-5">
         <div class="container">
-            <div class="appbar__wrapper d-flex-center">
-                <div class="appbar__img--holder appbar__img-w appbar__img-w--ucardbar">
-                    <img class="appbar__img lazyloaded" src="/assets/images/ucard.webp" alt="UBank"
-                        src="/assets/static/Ucard/ucard.webp">
-                </div>
-                <div class="appbar__text">
-                    <h2 class="appbar__heading">
-                        Sənin kartın - UCarddır! </h2>
-                    <div class="appbar__desc appbar__desc--ucardbar">
-                        Bu kart sənə dünyanın istənilən yerində multivalyutalı hesablarla alış-veriş imkanı, 10 000
-                        ₼-dək və 40 günədək faizsiz kredit xətti, 30%-dək keşbek və illik 6%-dək gəlir əldə etmək imkanı
-                        verir. Bir sözlə, bütün ehtiyaclar tək kartda!
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="uCardbar__img--holder uCardbar__img-w uCardbar__img-w--ucardbar">
+                        <img class="uCardbar__img lazyloaded" src="/assets/images/ucard.webp" alt="UBank"
+                            src="/assets/static/Ucard/ucard.webp">
                     </div>
-                    <div class="appbar__extras appbar__extras--multiple hidden--mobile">
-                        <a class="button button--fill-orange button--lg button--apply" href="/az/cards/view/1998">
-                            Ətraflı </a>
-                        <a class="button button--lg button--link button--text-white button--apply button--fill-white albalicard__btn button--fill-white-d button--fill-transparent"
-                            href="https://unibank.az/cards/ucardpartners">Partnyorlar</a>
-                        <a class="button button--lg button--link button--text-white button--apply button--fill-white albalicard__btn button--fill-white-d button--fill-transparent"
-                            href="https://onlineservices.unibank.az/PersonalCabinet/login.html?lang=az">Şəxsi
-                            kabinet</a>
-                    </div>
-
                 </div>
-            </div>
-
-         
+                <div class="col-md-6">
+                    <div class="uCardbar__text">
+                        <h2 class="uCardbar__heading">
+                            Sənin kartın - UCarddır! </h2>
+                        <div class="uCardbar__desc uCardbar__desc--ucardbar">
+                            Bu kart sənə dünyanın istənilən yerində multivalyutalı hesablarla alış-veriş imkanı, 10 000
+                            ₼-dək və 40 günədək faizsiz kredit xətti, 30%-dək keşbek və illik 6%-dək gəlir əldə etmək imkanı
+                            verir. Bir sözlə, bütün ehtiyaclar tək kartda!
+                        </div>
+                        <div class="uCardbar__extras uCardbar__extras--multiple hidden--mobile">
+                            <a class="button button--fill-orange button--lg button--apply" href="/az/cards/view/1998">
+                                Ətraflı </a>
+                            <a class="button button--lg button--link button--text-white button--apply button--fill-white albalicard__btn button--fill-white-d button--fill-transparent"
+                                href="https://unibank.az/cards/ucardpartners">Partnyorlar</a>
+                            <a class="button button--lg button--link button--text-white button--apply button--fill-white albalicard__btn button--fill-white-d button--fill-transparent"
+                                href="https://onlineservices.unibank.az/PersonalCabinet/login.html?lang=az">Şəxsi
+                                kabinet</a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>         
         </div>
     </div>
     <section>
-        <div class="appbar">
+        <div class="appbar mt-lg-5">
             <div class="container">
                 <div class="appbar__wrapper d-flex-center">
                     <div class="appbar__text">
-                        <h2 class="appbar__heading">
-                            UBank </h2>
-                        <div class="appbar__links hidden--desktop">
-                            <a class="appbar__link"
-                                href="https://play.google.com/store/apps/details?id=az.unibank.mbanking">
-                                <span class="sprite sprite--playstore-label"></span>
-                            </a>
-                            <a class="appbar__link"
-                                href="https://itunes.apple.com/ru/app/unibank-mobile/id1073632425">
-                                <span class="sprite sprite--appstore-label"></span>
-                            </a>
-                            <a class="appbar__link"
-                                href="https://appgallery.cloud.huawei.com/ag/n/app/C102780367?locale=en_US&amp;source=appshare&amp;subsource=C102780367">
-                                <span class="sprite sprite--appgalery-label"></span>
-                            </a>
-
-
-
-                        </div>
+                        <h2 class="appbar__heading mb-4 ">UBank</h2>                    
                         <div class="appbar__desc">
                             UBank 24/7 bank xidmətlərinə çıxışı smartfonunda təmin edən mobil tətbiqdir.
-                            Ödənişlərini banka gəlmədən, telefonunda bir toxunuşla həyata keçir! </div>
-                        <div class="appbar__links hidden--mob">
-                            <a class="appbar__link"
-                                href="https://play.google.com/store/apps/details?id=az.unibank.mbanking">
-                                <span class="sprite sprite--playstore-label"></span>
-                            </a>
-                            <a class="appbar__link"
-                                href="https://itunes.apple.com/ru/app/unibank-mobile/id1073632425">
-                                <span class="sprite sprite--appstore-label"></span>
-                            </a>
-                            <a class="appbar__link"
-                                href="https://appgallery.cloud.huawei.com/ag/n/app/C102780367?locale=en_US&amp;source=appshare&amp;subsource=C102780367">
-                                <span class="sprite sprite--appgalery-label"></span>
-                            </a>
-
-
-
-                        </div>
+                            Ödənişlərini banka gəlmədən, telefonunda bir toxunuşla həyata keçir! 
+                        </div>  
+                        <div class="appbar__links">
+                            <a href="https://play.google.com/store/apps/details?id=az.unibank.mbanking" 
+                                class="appbar__link playstore"></a>
+                            <a href="https://apps.apple.com/ru/app/unibank-mobile/id1073632425" 
+                                class="appbar__link appstore"></a>
+                            <a href="https://appgallery.huawei.com/app/C102780367?sharePrepath=ag&locale=en_US&source=appshare&subsource=C102780367" 
+                                class="appbar__link appgallery"></a>    
+                        </div>                
                         <div class="appbar__extras">
-                            <a class="appbar__extra" href="/az/umobile/index">
-                                Haqqında </a>
+                            <a class="appbar__extra" href="/az/umobile/index">Haqqında</a>
                         </div>
                     </div>
-
                     <div class="appbar__img--holder ">
                         <img class="appbar__img ls-is-cached lazyloaded" data-src="/assets/images/appbar2.png"
                             alt="UBank" src="/assets/images/appbar2.png">
