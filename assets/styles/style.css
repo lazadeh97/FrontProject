@@ -544,20 +544,15 @@ img {
 .appbar__link {
   display: inline-block;
   margin-right: 10px;
-  text-decoration: none;
   border: 1px solid #5e5a5a;
   border-radius: 10px;
-  padding: 5px 5px;
 }
 .appbar__link i {
   color: #5e5a5a;
 }
-.appbar__link span {
-  margin-left: 10px;
-}
 .appbar__links a {
-  height: 50px;
-  width: 150px;
+  height: 40px;
+  width: 130px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -581,10 +576,37 @@ img {
   line-height: 1.43;
   margin-bottom: 40px;
 }
-.appbar__img {
-  /* height: 495px; */
+
+.appbar__extras {
+  width: 130px;
+  padding: 10px 30px;
+  border: 1px solid ff6400;
+  background-color: #ff6400;
+  border-radius: 25px;
+}
+
+.appbar__extra {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  line-height: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.appbar__extra:hover {
+  color: #fff;
+}
+
+.appbar__img--holder {
+  width: 45%;
+  height: 400px;
   position: relative;
-  right: 0;
+}
+
+.appbar__img {
+  height: 495px;
+  width: 100%;
+  position: absolute;
   top: -95px;
-  float: right;
+  right: 0;
 }
